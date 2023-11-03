@@ -1,0 +1,181 @@
+{
+  "ApplicationName": "GreenCharge",
+  "DisplayName": "Intelligent e-mobility Charging Solution",
+  "Description": "A simple e-mobility charging solution that allows users to charge their electric vehicles using surplus renewable energy powered by blockchain & AI.",
+  "ApplicationRoles": [
+    {
+      "Name": "Owner",
+      "Description": "User who wants to sell surplus electricity."
+    },
+    {
+      "Name": "Buyer",
+      "Description": "User who wants to buy surplus electricity."
+    }
+  ],
+  "Workflows": [
+    {
+      "Name": "GreenCharge",
+      "DisplayName": "Intelligent e-mobility Charging Solution",
+      "Description": "Handles the business logic for a simple buyer-seller transaction for charging electric vehicles using surplus renewable energy.",
+      "Initiators": [ "Owner" ],
+      "StartState":  "ChargerAvailable",
+      "Properties": [
+        {
+          "Name": "State",
+          "DisplayName": "State",
+          "Description": "Holds the state of the contract",
+          "Type": {
+            "Name": "state"
+          }
+        },
+        {
+          "Name": "Description",
+          "DisplayName": "Description",
+          "Description": "Describes the asset being sold",
+          "Type": {
+            "Name": "string"
+          }
+        },
+        {
+          "Name": "AskingPrice",
+          "DisplayName": "Asking Price",
+          "Description": "The asking price for the surplus electricity",
+          "Type": {
+            "Name": "money"
+          }
+        },
+        {
+          "Name": "InstanceBuyer",
+          "DisplayName": "Instance Buyer",
+          "Description": "The user that places an offer for the surplus electricity",
+          "Type": {
+            "Name": "Buyer"
+          }
+        },
+        {
+          "Name": "InstanceOwner",
+          "DisplayName": "Instance Owner",
+          "Description": "The seller of this particular unit of surplus electricity",
+          "Type": {
+            "Name": "Owner"
+          }
+        }
+      ],
+      "Constructor": {
+        "Parameters": [
+          {
+            "Name": "description",
+            "Description": "The description of this asset",
+            "DisplayName": "Description",
+            "Type": {
+              "Name": "string"
+            }
+          },
+          {
+            "Name": "price",
+            "Description": "The price of this asset",
+            "DisplayName": "Price",
+            "Type": {
+              "Name": "money"
+            }
+          }
+        ]
+      },
+      "Functions": [
+        {
+          "Name": "PlaceOrder",
+          "DisplayName": "Make Offer",
+          "Description": "Make an offer",
+          "Parameters": []
+        },
+        {
+          "Name": "AcceptOrder",
+          "DisplayName": "Accept Offer",
+          "Description": "Accept the offer made",
+          "Parameters": []
+        },
+        {
+          "Name": "Reject",
+          "DisplayName": "Reject Offer",
+          "Description": "Reject the offer made",
+          "Parameters": []
+        },
+        {
+          "Name": "FinishCharging",
+          "DisplayName": "Finish Charging",
+          "Description": "Finish the charging operation.",
+          "Parameters": []
+        }
+      ],
+      "States": [
+        {
+          "Name": "ChargerAvailable",
+          "DisplayName": "Charger Available",
+          "Description": "The charger is available for operation.",
+          "PercentComplete": 20,
+          "Style": "Success",
+          "Transitions": [
+            {
+              "AllowedRoles": [ "Buyer" ],
+              "AllowedInstanceRoles": [],
+              "Description": "Select Charger",
+              "Function": "PlaceOrder",
+              "NextStates": [ "OrderPlaced" ],
+              "DisplayName": "Place Order"
+            }
+          ]
+        },
+        {
+          "Name": "OrderPlaced",
+          "DisplayName": "Order Placed",
+          "Description": "Order has been placed for charging",
+          "PercentComplete": 40,
+          "Style": "Success",
+          "Transitions": [
+            {
+              "AllowedRoles": [ ],
+              "AllowedInstanceRoles": [ "InstanceOwner" ],
+              "Description": "Accept the proposed order for charging",
+              "Function": "AcceptOrder",
+              "NextStates": [ "Charging" ],
+              "DisplayName": "Accept Order"
+            },
+            {
+              "AllowedRoles": [ ],
+              "AllowedInstanceRoles": [ "InstanceOwner" ],
+              "Description": "Reject the proposed order for the item",
+              "Function": "Reject",
+              "NextStates": [ "ChargerAvailable" ],
+              "DisplayName": "Reject"
+            }
+          ]
+        },
+        {
+          "Name": "Charging",
+          "DisplayName": "Charging",
+          "Description": "Ongoing charging operation.",
+          "PercentComplete": 80,
+          "Style": "Success",
+          "Transitions": [
+            {
+              "AllowedRoles": [ "Buyer" ],
+              "AllowedInstanceRoles": [],
+              "Description": "Finish Charging",
+              "Function": "FinishCharging",
+              "NextStates": [ "ChargingComplete" ],
+              "DisplayName": "Finish Charging"
+            }
+          ]
+        },
+        {
+          "Name": "ChargingComplete",
+          "DisplayName": "Charging Complete",
+          "Description": "Charging complete.",
+          "PercentComplete": 100,
+          "Style": "Success",
+          "Transitions": []
+        }
+      ]
+    }
+  ]
+}
