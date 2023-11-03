@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <meta property="og:title" content="Navigation for Electric Vehicles">
+  <title>GC : Home</title>
+  <link rel="shortcut icon" href="./output.jpg">
+  <link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.15.0/maps/maps.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.15.0/maps/maps-web.min.js"></script>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.15.0/services/services-web.min.js"></script>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav_logo">
+      <img class="logo" src="./output.jpg" alt="logo"> 
+      <span class="logo-text">Green Charge</span>
+    </div>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="#">Home</a></li>
+        <li><a href="navigator.html">Navigator</a></li>
+        <li><a href="stations.html">Stations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div>
+    <p class="about_heading">What we do?</p>
+  </div>
+  <div class="center">
+    <p class="about_text">
+      Our solution, known as "GreenCharge," is all about making the most of the energy we generate,
+      especially during times when it's not used much, like at night or when the sun is shining brightly.
+      You see, sometimes we produce more electricity than we can use, and the extra power just goes
+      to waste because storing it for a long time is really hard and costly. So, GreenCharge steps in to
+      fix this.
+    </p>
+    <p class="about_text">
+      We use AI (Artificial Intelligence) algorithms to predict when we're going to have extra
+      electricity. It's like having a crystal ball that tells us when we'll have more power than we need.
+      When we know that, we can be smart about using it. One of the great things we do is help
+      electric vehicle (EV) owners. We find out where they are and tell them the closest place to
+      charge their EVs. That's really handy, right?
+    </p>
+    <p class="about_text">
+      But that's not all! Tomake everything secure and fair, we also use blockchain. It's like a supersecure
+      digital ledger that keeps track of all the transactions. When you charge your EV, you pay
+      for the electricity you use, and we make sure everything is transparent and trustworthy. That
+      way, you know you're getting the energy you paid for.
+    </p>
+    <p class="about_text">
+      So, GreenCharge helps the planet by making sure we don't waste extra electricity. It helps EV
+      owners find charging spots easily, and itmakes sure everything is fair and secure using
+      blockchain. It's like having a smart friend that looks out for our energy and environment while
+      making our lives more convenient.
+    </p>
+    </p>
+  </div>
+
+  <div class="cta" onClick="scrollDown();">
+    <div class="btn">
+      <a></a><span>Go charge up!</span>
+    </div>
+  </div>
+
+  <div class="video_div">
+    <video class="video" autoplay muted loop>
+      <source src="https://res.cloudinary.com/rghosh/video/upload/v1649697508/Navic/cpo-city-animation_buykdt.mp4"
+        type="video/mp4">
+    </video>
+  </div>
+
+  <div id="here">
+    <p class="navigator_heading" id="scroll">Worried about your route?</p>
+  </div>
+  <div class="center">
+    <p class="navigator_text">
+      We use AI (Artificial Intelligence) algorithms to predict when we're going to have extra
+electricity. 
+</p>
+<p class="navigator_text">We find out where they are and tell them the closest place to
+charge their EVs. That's really handy, right?
+But that's not all! Tomake everything secure and fair, we also use blockchain. It's like a supersecure
+digital ledger that keeps track of all the transactions. When you charge your EV, you pay
+for the electricity you use, and we make sure everything is transparent and trustworthy. That
+way, you know you're getting the energy you paid for.
+    </p>
+  </div>
+
+  <div class="a_center">
+    <a class="nav_anchor" href="navigator.html" target="_blank">Check out our AI Route Mapping for Renewable Charging on the go</a>
+  </div>
+
+  <div class="img_div">
+    <img class="img_nav"
+      src="https://res.cloudinary.com/rghosh/image/upload/v1649856249/Navic/in-car-routing_ldravr.jpg">
+  </div>
+
+
+  <div>
+    <p class="navigator_heading">What about surplus charging stations?</p>
+  </div>
+  <div class="center">
+    <p class="navigator_text">
+      Our solution, known as "GreenCharge," is all about making the most of the energy we generate,
+especially during times when it's not used much, like at night or when the sun is shining brightly.
+You see, sometimes we produce more electricity than we can use, and the extra power just goes
+to waste because storing it for a long time is really hard and costly. So, GreenCharge steps in to
+fix this.
+    </p>
+  </div>
+
+  <div class="a_center">
+    <a class="nav_anchor" href="stations.html" target="_blank">Check out our stations locator</a>
+  </div>
+
+  <div class="img_div">
+    <img class="img_nav"
+      src="https://res.cloudinary.com/rghosh/image/upload/v1649857240/Navic/fleet-charging_hy4fte.jpg">
+  </div>
+
+</body>
+
+<script src="home.js" type="text/javascript"></script>
+
+</html>
