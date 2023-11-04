@@ -20,7 +20,7 @@ Future of Mobility & Use of Tech
 The slow adoption of electric vehicles is hindered by challenges in charging infrastructure and energy inefficiency. Surplus energy goes to waste due to lack of storage and convenient urban charging options. This delay in progress towards climate goals intensifies pollution and worsens climate change. Efficient energy use and accessible electric vehicle charging infrastructure are crucial for a sustainable future mobility system, necessitating urgent solutions.
 
 
-## What it does?
+## What does Green Charge?
 
 
 
