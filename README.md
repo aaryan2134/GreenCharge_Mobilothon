@@ -21,14 +21,11 @@ The slow adoption of electric vehicles is hindered by challenges in charging inf
 
 
 ## What Green Charge do?
--To make everything secure and fair,To perform the financial transaction, We implemented a  blockchain framework to integrate the energy provider to the electric vehicle owner.
--When you charge your EV, you pay for the electricity you use, and we make sure everything is transparent and trustworthy. That way, you know you're getting the energy you paid for.
-
--With Green Charge,we help electric vehicle (EV) owners to find out where they are and tell them the closest place to charge their EVs.
-
--Using Machine Learning algorithms, Green Charge will forecast surplus energy production in order to provide the best possible service to electric vehicle owners.
-
--With GreenCharge, we ensure that extra electricity is not wasted. It helps EV owners find charging spots easily, and it makes sure everything is fair and secure using blockchain.
+- To make everything secure and fair,we implemented a  blockchain framework to integrate the energy provider to the electric vehicle owner.
+- When you charge your EV, you pay for the electricity you use, and we make sure everything is transparent and trustworthy. That way, you know you're getting the energy you paid for.
+- With Green Charge,we help electric vehicle (EV) owners to find out where they are and tell them the closest place to charge their EVs.
+- Using Machine Learning algorithms, Green Charge will forecast surplus energy production in order to provide the best possible service to electric vehicle owners.
+- With GreenCharge, we ensure that extra electricity is not wasted. It helps EV owners find charging spots easily, and it makes sure everything is fair and secure using blockchain.
 
 
 
