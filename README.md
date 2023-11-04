@@ -5,10 +5,10 @@
 Future of Mobility & Use of Tech
 
 ## Team Members
-- Aayush Patel 
-- Abhijeet Thakur
-- Aaryan Arora
-- Amogh Nigam 
+- [Aayush Patel](https://github.com/ashu-rb)
+- [Abhijeet Thakur](https://github.com/AbhijeetThakur1)
+- [Aaryan Arora ](https://github.com/aaryan2134)
+- [Amogh Nigam](https://github.com/Amogh-Nigam)
   
 ## Presentation
 
