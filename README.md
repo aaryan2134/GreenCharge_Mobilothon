@@ -11,6 +11,7 @@ Future of Mobility & Use of Tech
 - [Amogh Nigam](https://github.com/Amogh-Nigam)
   
 ## Presentation
+[Link](https://www.canva.com/design/DAFzAh7DaAY/iNIwxk1ApThhMyQbMFYvnQ/view?utm_content=DAFzAh7DaAY&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 ## GreenCharge Demo 
 
